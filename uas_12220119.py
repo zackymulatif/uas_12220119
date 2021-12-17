@@ -43,8 +43,8 @@ def home():
     #box command
     st.sidebar.success("Silahkan pilih menu")
 
-    st.markdown("<h1 style='text-align: right; color: green;'> M. Zacky Mulatif </h1>", unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align: right; color: green;'> Data Produksi Minyak Mentah </h2>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: right; color: green;'> Data Produksi Minyak Mentah </h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: right; color: green;'> By M. Zacky Mulatif </h3>", unsafe_allow_html=True)
 
 #No 1.A
 def no1a():
@@ -237,7 +237,7 @@ LOGGER = get_logger(__name__)
 
 FITUR = OrderedDict(
     [
-        ("HOME", (home, None)),
+        ("Home", (home, None)),
         (
             "No. 1.a",
             (
@@ -252,7 +252,7 @@ FITUR = OrderedDict(
             (
                 no1b,
                 """
-                Negara dengan produksi minyak mentah terbesar pada suatu tahun
+                Negara dengan produksi minyak mentah terbesar pada tahun tertentu
                 """,
             ),
         ),
@@ -270,7 +270,7 @@ FITUR = OrderedDict(
             (
                 no1d,
                 """
-                Negara Dengan Produksi Terbesar, Terkecil, dan Tak berproduksi Minyak:
+                Negara Dengan Produksi Terbesar, Terkecil, dan Tidak memproduksi Minyak:
                 """,
             ),
         ),
@@ -283,7 +283,7 @@ def run():
     demo_name = st.sidebar.selectbox("Silahkan pilih menu", list(FITUR.keys()), 0)
 
     demo = FITUR[demo_name][0]
-    if demo_name == "HOME":
+    if demo_name == "Home":
         pass
     else:
         st.markdown("# %s" % demo_name)
