@@ -44,7 +44,7 @@ def home():
     st.sidebar.success("Silahkan pilih menu")
 
     st.markdown("<h1 style='text-align: right; color: green;'> Data Produksi Minyak Mentah </h1>", unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align: right; color: green;'> By M. Zacky Mulatif </h3>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: right; color: green;'> M. Zacky Mulatif </h3>", unsafe_allow_html=True)
 
 #No 1.A
 def no1a():
